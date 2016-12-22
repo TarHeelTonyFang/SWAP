@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang       ="en">
+
+<head>
+    <!-- test -->
+    <meta charset    ="utf-8">
+    <meta http-equiv ="X-UA-Compatible" content="IE=edge">
+    <meta name       ="viewport" content="width=device-width, initial-scale=1">
+    <meta name       ="description" content="">
+    <meta name       ="author" content="">
+
+    <title>Swap - Share your skill with the world</title>
+
+
+
+    <!-- Bootstrap Core CSS -->
+    <link href       ="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href       ="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href       ="vendor/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" />
+    <link href       ='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href       ='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- CSS -->
+   
+    <link type       ="text/css" rel="stylesheet" href="css/style.css" />
+
+</head>
+
+<body id         ="page-top">
+
+    <nav id          ="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class       ="container-fluid">
+
+            <div class       ="navbar-header">
+                <button type     ="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class      ="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class         ="navbar-brand page-scroll" href="#page-top">Swap</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class       ="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class        ="nav navbar-nav navbar-left">
+                    <li>
+                        <a class         ="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class         ="page-scroll" href="#services">Services</a>
+                    </li>
+                    <li>
+                        <a class         ="page-scroll" href="#test">Products</a>
+                    </li>
+                    <li>
+                        <a class         ="page-scroll" href="#credit">Our Team</a>
+                    </li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right" id="user_nav">
+                    <li>
+                        <a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Shopping Cart</a>
+                    </li>
+                    <li>
+                        <a id="nav_register_button" href="#modal">Sign in</a>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header>
+        <div class       ="header-content">
+            <div class       ="header-content-inner">
+                <!-- <h1 id           ="homeHeading">Swap</h1> -->
+                <img src="img/LOG.png" alt="Swap" height = "140px";>
+                </br>
+                </br>
+                
+                <p>Share your skill with the world</p>
+                <a href          ="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
+                <a id            ="modal_trigger" href="#modal" class="btn btn-primary btn-xl">Login/Register</a>
+                <div id          ="modal" class="popupContainer" style="display:none;">
+                    <header class    ="popupHeader">
+                        <span class      ="header_title">Login</span>
+                        <span id="login_close" class="modal_close"><i class="fa fa-times"></i></span>
+                    </header>
+
+                    <section class   ="popupBody">
+                        
+                        <!-- Username & Password Login form -->
+
+                        <div class       ="social_login">
+                            <form id="login_form">
+                                <label>Username</label>
+                                <br />
+                                <input type      ="text" id="username_login"/>
+                                <br />
+                                <br />
+
+                                <label>Password</label>
+                                <br />
+                                <input type      ="password" id="password_login"/>
+                                <br />
+                                <br />
+    
+
+                                <div class       ="checkbox">
+                                    <input id        ="remember" type="checkbox" />
+                                    <label for       ="remember">Remember me </label>
+                                </div>
+                                <br />
+
+                                <div class       ="action_btns">
+                                    <div class       ="one_half"><a href="#" id="register_button" class="btn">Sign up</a></div>
+                                    <!-- <div class       ="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Back</a></div> -->
+                                    <div class       ="one_half last"><a href="#" id="sign_in" class="btn btn_red">Login</a></div>
+                                </div>
+                            </form>
+
+                            <a href          ="#" class="forgot_password">Forgot password?</a>
+                        </div>
+
+                        <!-- Register Form -->
+                        <div class ="user_register">
+                            <form id="register_form">
+                                <label>Username</label>
+                                <input type      ="text" id="username_reg"/>
+                                <br />
+
+                                <label>Email Address</label>
+                                <input type      ="text" id="email_reg"/>
+                                <br />
+
+                                <label>Password</label>
+                                <input type      ="password" id="password_reg"/>
+                                <br />
+
+                                <label>Password Again</label>
+                                <input type      ="password" id="password2_reg"/>
+                                <br />
+
+
+                                <div class       ="action_btns">
+                                    <div class       ="one_half"><a href="#" id="backbutton" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Back</a></div>
+                                    <div class       ="one_half last"><a href="" id="register" class="btn btn_red">Register</a></div>
+                                </div>
+                            </form>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class   ="bg-primary" id="about">
+        <div class       ="container">
+            <div class       ="row">
+                <div class       ="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class        ="section-heading">WHY WE SWAP</h2>
+                    <hr class        ="light">
+                    <p class         ="text-faded">SWAP is a customized service trading platform to transfer individual resources, time and skills into value. You can be a seller who post your professional skill with price tags, or you can be a buyer who use other's skills to achieve your specific goals.
+                    </p>
+                    <a href          ="#services" class="page-scroll btn btn-default btn-xl sr-button">Get Started!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id      ="services">
+        <div class       ="container">
+            <div class       ="row">
+                <div class       ="col-lg-12 text-center">
+                    <h2 class        ="section-heading">HOW TO SWAP</h2>
+                    <hr class        ="primary">
+                </div>
+            </div>
+        </div>
+        <div class       ="container">
+            <div class       ="row">
+                <div class       ="col-lg-3 col-md-6 text-center">
+                    <div class       ="service-box">
+                        <i class         ="fa fa-4x fa-cart-plus text-primary sr-icons"></i>
+                        <h3>Browse</h3>
+                        <p class         ="text-muted">We always updated with new ideas and inspirations. Come back regularly and check our products.</p>
+                    </div>
+                </div>
+                <div class       ="col-lg-3 col-md-6 text-center">
+                    <div class       ="service-box">
+                        <i class         ="fa fa-4x fa-commenting text-primary sr-icons"></i>
+                        <h3>Chat</h3>
+                        <p class         ="text-muted">Chat with the seller to know more about the product. Scedule a time and date when you make decision.</p>
+                    </div>
+                </div>
+                <div class       ="col-lg-3 col-md-6 text-center">
+                    <div class       ="service-box">
+                        <i class         ="fa fa-4x fa-credit-card-alt text-primary sr-icons"></i>
+                        <h3>Order</h3>
+                        <p class         ="text-muted">Simply make the order from the product page. Pay in whatever way you like.</p>
+                    </div>
+                </div>
+                <div class       ="col-lg-3 col-md-6 text-center">
+                    <div class       ="service-box">
+                        <i class         ="fa fa-4x fa-heart text-primary sr-icons"></i>
+                        <h3>Enjoy</h3>
+                        <p class         ="text-muted">Enjoy your customized product that you've always wanted!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <aside class="bg-dark">
+        <div class       ="col-lg-12 text-center">
+                    <h2 class        ="section-heading">Category</h2>
+                    <hr class        ="primary">
+                </div>
+
+        <div >
+            <table>
+                <tr>
+                    <td>Handcraft</td>
+                    <td>Consulting</td>
+                    <td>Astrology</td>
+                    <td>Pet</td>
+                    <td>Photography</td>
+                    <td>Sports</td>
+                    <td>Housework</td>
+
+                </tr>
+            </table>
+        </div>
+    </aside>
+
+
+<!--    <section class   ="no-padding" id="portfolio">-->
+<!---->
+<!--        <div class       ="container-fluid">-->
+<!--            <div class       ="row no-gutter popup-gallery" id="thumbnails">-->
+<!---->
+<!--                <div class       ="col-lg-4 col-sm-6">-->
+<!--                    <a href          ="me.png" class="portfolio-box">-->
+<!--                        <img src         ="img/me.png" class="img-responsive" alt="">-->
+<!--                        <div class       ="portfolio-box-caption">-->
+<!--                            <div class       ="portfolio-box-caption-content">-->
+<!--                                <div class       ="project-category text-faded">-->
+<!--                                    This place is for future use-->
+<!--                                </div>-->
+<!--                                <div class       ="project-name">-->
+<!--                                    Project Name-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </a>-->
+<!--                </div>-->
+<!---->
+<!---->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
+
+    <section  id="test">
+
+<!--        <div id="content">-->
+   <!--  <header id="masthead">
+        <h1><span class="tagline">This is just a test</h1>
+    </header> -->
+    <div class="text-center">
+         <h1 style= "margin-top:-50px" class="section-heading">Products</h1>
+         <hr class        ="primary">
+<!--    </div>-->
+
+    <div id="site">
+        <div id="products">
+            <ul>
+            
+                <li class="col-lg-3 col-md-9 text-center">
+                    <div class="product-image">
+                        <img src="img/me.png" alt="" />
+                    </div>
+                    <div class="product-description" data-name="EXPENSIVE" data-price="10000">
+                        <h3 class="product-name">EXTREMELY EXPENSIVE GIFT</h3>
+                        <p class="product-price">$ 10000</p>
+                        <form class="add-to-cart" action="cart.html" method="post">
+                            <div class = "qt">
+                                <label for="qty-1">Quantity: </label>
+                                <input type="text" name="qty-1" id="qty-1" class="qty" value="1" />
+                            </div>
+                            <br>
+                            <p><input type="submit" value="Add to cart" class="btn btn-primary" /></p>
+                        </form>
+                    </div>
+                </li>
+                
+                <li class="col-lg-3 col-md-9 text-center">
+                    <div class="product-image">
+                        <img src="img/me.png" alt="" />
+                    </div>
+                    <div class="product-description" data-name="CHEAP" data-price="2">
+                        <h3 class="product-name">SUPER CHEAP GIFT</h3>
+                        <p class="product-price">$ 2</p>
+                        <form class="add-to-cart" action="cart.html" method="post">
+                            <div class = "qt">
+                                <label for="qty-2">Quantity: </label>
+                                <input type="text" name="qty-2" id="qty-2" class="qty" value="1" />
+                            </div>
+                            <br>
+                            <p><input type="submit" value="Add to cart" class="btn btn-primary" /></p>
+                        </form>
+                    </div>
+                </li>
+                
+                <li class="col-lg-3 col-md-9 text-center">
+                    <div class="product-image">
+                        <img src="img/me.png" alt="" />
+                    </div>
+                    <div class="product-description" data-name="DONATE" data-price="10">
+                        <h3 class="product-name">DONATE PLEASE</h3>
+                        <p class="product-price">$ 10</p>
+                        <form class="add-to-cart" action="cart.html" method="post">
+                            <div class = "qt">
+                                <label for="qty-3">Quantity: </label>
+                                <input type="text" name="qty-3" id="qty-3" class="qty" value="1" />
+                            </div>
+                            <br>
+                            <p><input type="submit" value="Add to cart" class="btn btn-primary" /></p>
+                        </form>
+                    </div>
+                </li>
+
+
+                
+            </ul>
+        </div>
+    </div>
+    </div>
+    
+    
+
+
+    </section>
+
+    <!-- Credits Section -->
+    <section id="credit" class="bg-primary">       <!-- credits-section -->
+        <div class="container">
+         <div class="row">
+            <div class ="col-lg-12" id="contributors">
+            <h1>Team member</h1>
+            <hr class        ="primary">
+            <br>
+                <h3>Zhenwei Zhang</h3>
+                <p>PID <font color=black>720518992</font> <br>
+                    Email <font color=black>zhenwei@live.unc.edu</font><br>
+                </p>
+                <h3>Claudia Zhou</h3>
+                <p>PID <font color=black>720466811</font> <br>
+                    Email <font color=black>pohwaran@live.unc.edu</font><br>
+                </p>
+                <h3>Weijian Li</h3>
+                <p>PID <font color=black>720517210</font> <br>
+                    Email <font color=black>weijian@live.unc.edu</font><br>
+                </p>
+                <h3>Zhengyang Fang</h3>
+                <p>PID <font color=black>720497122</font> <br>
+                    Email <font color=black>fzy@live.unc.edu</font><br>
+                </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- jQuery -->
+    <script src      ="vendor/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="vendor/jquery/jquery.js"></script>
+    <script type="text/javascript" src="vendor/jquery/jquery.leanModal.min.js"></script>
+
+    <!-- Login Database -->
+    <script type="text/javascript" src="js/signIn.js"></script>
+    <script type="text/javascript" src="js/register.js"></script>
+    <script type="text/javascript" src="js/homepage.js"></script>
+    <script type="text/javascript" src="js/helper.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src      ="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src      ="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src      ="js/creative.min.js"></script>
+
+    <!-- Shopping Cart Javascript -->
+    <script type="text/javascript" src="js/jquery.shop.js"></script>
+
+    <script type="text/javascript">
+    $("#modal_trigger").leanModal({top : 200,closeButton: ".modal_close" });
+    $("#nav_register_button").leanModal({top : 200,closeButton: ".modal_close" });
+    
+    $(function(){
+
+        // Calling Register Form
+        $("#register_button").click(function(){
+            $(".social_login").hide();
+            $(".user_register").show();
+            $(".header_title").text('Register');
+            return false;
+        });
+        //calling register form from van bar
+        $("#nav_register_button").click(function(){
+            $(".user_register").hide();
+            $(".social_login").show();
+            $(".header_title").text('Login');
+            return false;
+        });
+
+        //Going back to Login Forms
+        $(".back_btn").click(function(){
+            //$(".user_login").hide();
+            $(".user_register").hide();
+            $(".social_login").show();
+            $(".header_title").text('Login');
+            return false;
+        });
+
+    })
+
+    </script>
+
+</body>
+
+</html>

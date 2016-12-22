@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+<html lang       ="en">
+<head>
+    <!-- test -->
+    <meta charset    ="utf-8">
+    <meta http-equiv ="X-UA-Compatible" content="IE=edge">
+    <meta name       ="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Swap - Share your skill with the world</title>
+
+
+
+    <!-- Bootstrap Core CSS -->
+    <link href       ="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href       ="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" />
+    <link href       ='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href       ='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- CSS -->
+
+    <link type ="text/css" rel="stylesheet" href="css/style.css" />
+    <link type ="text/css" rel="stylesheet" href="css/shoppingcart.css" />
+
+    <!-- jQuery -->
+    <script src      ="vendor/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="vendor/jquery/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src      ="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src      ="js/creative.min.js"></script>
+
+    <!-- Shopping Cart Javascript -->
+    <script type="text/javascript" src="js/jquery.shop.js"></script>
+
+</head>
+
+
+<body id         ="page-top">
+
+    <nav id          ="mainNav" class="navbar navbar-default navbar-fixed-top affix">
+        <div class       ="container-fluid">
+
+            <div class       ="navbar-header">
+                <button type     ="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class      ="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class         ="navbar-brand page-scroll" href="index.html">Swap</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class       ="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class        ="nav navbar-nav navbar-left">
+                    <li>
+                        <a class         ="page-scroll" href="index.html#about">About</a>
+                    </li>
+                    <li>
+                        <a class         ="page-scroll" href="index.html#services">Services</a>
+                    </li>
+                    <li>
+                        <a id="product_button" class ="page-scroll" href="index.html#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a class         ="page-scroll" href="index.html#test">Products</a>
+                    </li>
+                    <li>
+                        <a class         ="page-scroll" href="index.html#credit">Our Team</a>
+                    </li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right" id="user_nav">
+                    <li>
+                        <a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Shopping Cart</a>
+                    </li>
+                    <li>
+                        <a id="nav_register_button" href="index.html#modal">Sign in</a>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header>
+        <div class       ="header-content">
+
+    <div id="site">
+        <div id="content">
+        <h1>Checkout</h1>
+        <br>
+            <table id="checkout-cart" class="shopping-cart">
+              <thead>
+                <tr>
+                    <th scope="col">Item</th>
+                    <th scope="col">Qty</th>
+                    <th scope="col">Price</th>
+                </tr>
+              </thead>
+              <tbody>
+              
+              </tbody>
+            </table>
+         <div id="pricing">
+            
+            <p id="shipping">
+                <strong>Shipping</strong>: <span id="sshipping"></span>
+            </p>
+            
+            <p id="sub-total">
+                <strong>Total</strong>: <span id="stotal"></span>
+            </p>
+         </div>
+     </br>
+         
+         <form action="order.html" method="post" id="checkout-order-form">
+            <h3>Your Details</h3>
+            <hr class        ="primary">
+        </br>
+            
+            <fieldset id="fieldset-billing">
+                <legend>Billing</legend>
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" data-type="string" data-message="This field cannot be empty" />
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" data-type="expression" data-message="Not a valid email address" />
+                </div>
+                <div>
+                    <label for="city">City</label>
+                    <input type="text" name="city" id="city" data-type="string" data-message="This field cannot be empty" />
+                </div>
+                <div>
+                    <label for="address">Address</label>
+                    <input type="text" name="address" id="address" data-type="string" data-message="This field cannot be empty" />
+                </div>
+                <div>
+                    <label for="zip">ZIP Code</label>
+                    <input type="text" name="zip" id="zip" data-type="string" data-message="This field cannot be empty" />
+                </div>
+                <div>
+                    <label for="country">Country</label>
+                    <select name="country" id="country" data-type="string" data-message="This field cannot be empty">
+                        <option value="">Select</option>
+                        <option value="US">USA</option>
+                        <option value="CH">China</option>
+                    </select>
+                </div>
+            </fieldset>
+            <br>
+            <div id="shipping-same">Same as Billing <input type="checkbox" id="same-as-billing" value=""/></div>
+        </br>
+            
+            <fieldset id="fieldset-shipping">
+                
+                <legend>Shipping</legend>
+                
+                <div>
+                    <label for="sname">Name</label>
+                    <input type="text" name="sname" id="sname" data-type="string" data-message="This field cannot be empty" />
+                </div>
+                <div>
+                    <label for="semail">Email</label>
+                    <input type="text" name="semail" id="semail" data-type="expression" data-message="Not a valid email address" />
+                </div>
+                <div>
+                    <label for="scity">City</label>
+                    <input type="text" name="scity" id="scity" data-type="string" data-message="This field cannot be empty" />
+                </div>
+                <div>
+                    <label for="saddress">Address</label>
+                    <input type="text" name="saddress" id="saddress" data-type="string" data-message="This field cannot be empty" />
+                </div>
+                <div>
+                    <label for="szip">ZIP Code</label>
+                    <input type="text" name="szip" id="szip" data-type="string" data-message="This field cannot be empty" />
+                </div>
+                <div>
+                    <label for="scountry">Country</label>
+                    <select name="scountry" id="scountry" data-type="string" data-message="This field cannot be empty">
+                        <option value="">Select</option>
+                        <option value="US">USA</option>
+                        <option value="CH">China</option>
+                    </select>
+                </div>
+            </fieldset>
+            <br>
+            <p><input type="submit" id="submit-order" value="Submit" class="btn btn-primary btn-xl" /></p>
+         
+         </form>
+    </div>
+</div>
+        
+
+
+
+
+
+</div>
+</header>
+</body>
+</html>

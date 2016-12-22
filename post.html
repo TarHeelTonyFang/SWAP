@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang       ="en">
+
+<head>
+    <!-- test -->
+    <meta charset    ="utf-8">
+    <meta http-equiv ="X-UA-Compatible" content="IE=edge">
+    <meta name       ="viewport" content="width=device-width, initial-scale=1">
+
+    <title>my account</title>
+   
+
+    <!-- Bootstrap Core CSS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href       ="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    
+
+    <!-- Custom Fonts -->
+    <link href       ="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" />
+    <link href       ='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- CSS -->
+   
+    <link type       ="text/css" rel="stylesheet" href="css/style.css" />
+
+</head>
+
+<body id         ="page-top">
+
+    <nav id          ="mainNav" class="navbar navbar-default navbar-fixed-top affix">
+        <div class       ="container-fluid">
+
+            <div class       ="navbar-header">
+                <button type     ="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class      ="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class         ="navbar-brand page-scroll" href="index.html">Swap</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class       ="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class        ="nav navbar-nav navbar-left">
+                    <li>
+                        <a class         ="page-scroll" href="index.html#about">About</a>
+                    </li>
+                    <li>
+                        <a class         ="page-scroll" href="index.html#services">Services</a>
+                    </li>
+                    <li>
+                        <a id="product_button" class ="page-scroll" href="index.html#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a class         ="page-scroll" href="index.html#test">Products</a>
+                    </li>
+                    <li>
+                        <a class         ="page-scroll" href="index.html#credit">Our Team</a>
+                    </li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right" id="user_nav">
+                    <li>
+                        <a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Shopping Cart</a>
+                    </li>
+                    <li>
+                        <a id="nav_register_button" href="index.html#modal">Sign in</a>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header>
+        <div class       ="header-content">
+            <div id="content">
+                <h2 class        ="section-heading" style="color:black;">POST MY SKILL</h2>
+                <hr class        ="primary">
+                <form id="post_form">
+                    <br />
+                    <label for ="product_name">Produc Name</label>
+                    <br />
+                    <input class="form-control" type="text" id="product_name"/>
+                    <br />
+                    <br />
+
+                    <label for ="fileToUpload">Product Image</label>
+                    <br>
+                    <input class="form-control" type="text" id="img"/>
+                    <small id="fileHelp" class="form-text text-muted">Please input url of an image</small>
+                    <!-- <fieldset action="upload.php" method="post" enctype="multipart/form-data">
+                        <br>
+                        <input type="file" class="form-control-file" name="fileToUpload" id="fileToUpload">
+                        <small id="fileHelp" class="form-text text-muted">Please upload an image that is no larger than 1 MB</small>
+                        <br>
+                        
+                        <br>
+                        <button type="submit" class="btn btn-default" name="submit">Upload Image</button>
+                        </br>
+                        </br>
+                    </fieldset> -->
+                    </br>
+                    </br>
+                    </br>
+                    <label>Category</label>
+                    <br />
+                    <div class="form-group">
+                        <!-- <label for="category">Please select the category of your skill</label> -->
+                        <select class="form-control" id="category">
+                            <option>Fund Zhenwei</option>
+                            <option>Handcraft</option>
+                            <option>Consulting</option>
+                            <option>Photography</option>
+                            <option>Astrology</option>
+                            <option>Pet</option>
+                            <option>Sports</option>
+                            <option>Housework</option>
+                        </select>
+                        <small id="categoryHelp" class="form-text text-muted">Please select the category of your skill</small>
+                    </div> 
+                    <br />
+                    <br />
+                    <label for = "price">Price</label>
+                    <br />
+                    <input class="form-control" type="text" placeholder="$" id="price"/>
+                    <label>&nbsp;Dollars</label>
+                    <br />
+                    <br />
+
+                    <div class="form-group">
+                        <label for="comment">Description:</label>
+                        <textarea class="form-control" rows="10" cols="100" id="description" placeholder="Please input the description of your skill"></textarea>
+                    </div>
+                    <br />
+                    <div class       ="action_btns">
+                        <a href="#" id="post_button" class="btn btn-primary">POST!</a>
+                    </div>
+                </form>
+
+
+
+
+            </div>
+        </div>
+    </header>    
+
+    <script src      ="js/creative.min.js"></script>
+    <!-- Shopping Cart Javascript -->
+    <script type="text/javascript" src="js/jquery.shop.js"></script>
+    <!-- Linked JS -->
+    <script type="text/javascript" src="js/post.js"></script>
+    <script type="text/javascript" src="js/helper.js"></script>
+</body>
+
+</html>
